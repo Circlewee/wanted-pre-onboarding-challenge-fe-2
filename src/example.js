@@ -16,7 +16,7 @@ function foo() {}
 // Use the inline {@link} tag to include a link within a free-form description.
 /**
  * @see {@link foo} for further information.
- * @see {@link http://github.com|GitHub}
+ * @see {@link http://github.com/GitHub}
  */
 function bar() {}
 
@@ -32,7 +32,7 @@ function DairyProduct() {}
  * @return {boolean}
  */
 DairyProduct.prototype.isSolid = function () {
-	throw new Error('must be implemented by subclass!');
+  throw new Error('must be implemented by subclass!');
 };
 
 /**
@@ -47,5 +47,5 @@ function Milk() {}
  * @return {boolean} Always returns false.
  */
 Milk.prototype.isSolid = function () {
-	return false;
+  return false;
 };
