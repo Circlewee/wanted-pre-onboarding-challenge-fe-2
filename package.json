@@ -1,0 +1,15 @@
+{
+  "name": "wanted-pre-onboarding-challenge-fe-2",
+  "version": "1.0.0",
+  "description": "원티드 프리온보딩 챌린지 9월 TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "docs": "jsdoc -c jsdoc.json",
+    "predeploy": "rm -rf docs/* && npm run docs",
+    "deploy": "gh-pages -d docs"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0",
+    "jsdoc": "^3.6.11"
+  }
+}
