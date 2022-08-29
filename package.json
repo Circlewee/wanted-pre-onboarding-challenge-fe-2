@@ -1,0 +1,14 @@
+{
+  "name": "jsdoc-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "docs": "jsdoc -c jsdoc.json",
+    "deploy": "gh-pages -d docs"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0",
+    "jsdoc": "^3.6.11"
+  }
+}
