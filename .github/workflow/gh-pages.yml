@@ -1,13 +1,16 @@
 name: GitHub Pages
 
 on:
-  push:
+  pull_request:
     branches:
-      - main # Set a branch name to trigger deployment
+      - main
+    types:
+      - closed
 
 jobs:
-  deploy:
-    runs-on: ubuntu-20.04
+  if_merged:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
     steps:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
