@@ -7,10 +7,16 @@ on:
     types: [closed]
 
 jobs:
-  if_merged:
+  merged_request:
     if: ${{ github.event.pull_request.merged }}
     runs-on: ubuntu-latest
     steps:
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run docs
+
       - name: GitHub Pages action
         uses: peaceiris/actions-gh-pages@v3.7.3
         with:
