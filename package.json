@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "docs": "jsdoc -c jsdoc.json",
-    "predeploy": "rm -rf docs/* && npm run docs",
+    "predeploy": "npm run docs",
     "deploy": "gh-pages -d docs"
   },
   "devDependencies": {
@@ -13,4 +13,3 @@
     "jsdoc": "^3.6.11"
   }
 }
-
