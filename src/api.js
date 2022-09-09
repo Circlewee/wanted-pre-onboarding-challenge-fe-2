@@ -1,6 +1,4 @@
 class Api {
-  instance;
-
   constructor(instance) {
     this.instance = instance;
   }
